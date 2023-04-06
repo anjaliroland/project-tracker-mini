@@ -64,3 +64,16 @@
 //  B) when generating a <tr> for a project, add a <td> that has a button to delete a project from the list
 //
 //  C) use jQuery event delegation to attach an event listerner to each delete button so the parent element (<tr>) is removed from page and local storage
+
+
+//https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+//https://getbootstrap.com/docs/5.1/components/modal/
+
+
+//1.A
+function displayTime() {
+    var rightNow = dayjs().format('MMM DD, YYYY [at] hh:mm:ss a');
+    $('#currentDay').text(rightNow);
+}
+displayTime();
+setInterval(displayTime(), 1000);
